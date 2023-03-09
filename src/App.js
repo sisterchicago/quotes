@@ -38,14 +38,16 @@ export default function App(props) {
               <Route path="/kindness" element={<Kindness />} />
               <Route path="/success" element={<Success />} />
             </Routes>
-
-          <div className='push'></div>
+          </Router>
+        </div>  
+          
+        <div className='push'>
           <footer className='footer'>
             Copyright Natalie Taylor 2022
           </footer>
-         
-          </Router>
-        </div>
+        </div> 
+          
+        
  
     </>
   )

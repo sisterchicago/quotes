@@ -13,10 +13,10 @@ function QuotesContextProvider(props) {
     const [inspiration, setInspiration] = useState([])
     const [kindness, setKindness] = useState([{}])
     const [success, setSuccess] = useState([])
-    const [today, setToday] = useState({
-        q: "",
-        a: ""
-    })
+    //const [today, setToday] = useState({
+   //     q: "",
+   //     a: ""
+   // })
     //const [today, setToday] = useState([])
 
     function getConfidence() {
@@ -64,14 +64,14 @@ function QuotesContextProvider(props) {
             .catch(err => console.log(err))
     }
 
-    function getToday() {
-        axios.get(`https://vschool-cors.herokuapp.com?url=https://zenquotes.io/api/random/?option1=q&option2=a`)
-            .then(res => setToday({
-                q: res.data[0].q,
-                a: res.data[0].a
-            }))
-            .catch(err => console.log(err))
-    }
+    // function getToday() {
+    //     axios.get(`https://vschool-cors.herokuapp.com?url=https://zenquotes.io/api/random/?option1=q&option2=a`)
+    //         .then(res => setToday({
+    //             q: res.data[0].q,
+    //             a: res.data[0].a
+    //         }))
+    //         .catch(err => console.log(err))
+    //}
 
     return (
         <QuotesContext.Provider value={{ 
@@ -84,7 +84,7 @@ function QuotesContextProvider(props) {
             getKindness,
             getInspiration,
             getSuccess,
-            getToday
+            //getToday
             }}>
             { props.children }
         </QuotesContext.Provider>

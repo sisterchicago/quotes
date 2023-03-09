@@ -79,7 +79,7 @@ function QuotesContextProvider(props) {
             inspiration, 
             kindness, 
             success, 
-            today,
+            //today,
             getConfidence,
             getKindness,
             getInspiration,

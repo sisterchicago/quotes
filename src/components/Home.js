@@ -29,11 +29,11 @@ export default function Home() {
                     </h1>
                     <br />
                     <h3 className='home-quote'>
-                        "{today.q}"
+                        "{today.q}Integrity is choosing courage over comfort; choosing what is right over what is fun, fast, or easy; and choosing to practice our values rather than simply professing them."
                     </h3>
                     <br />
                     <h4 className='home-author'>
-                       - {today.a}
+                       - {today.a}Brené Brown
                     </h4>   
                 </div>
             </div>

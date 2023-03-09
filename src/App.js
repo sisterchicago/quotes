@@ -40,6 +40,11 @@ export default function App(props) {
             </Routes>
           </Router>
         </div>  
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
           
         <div className='push'>
           <footer className='footer'>

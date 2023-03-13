@@ -20,7 +20,7 @@ function QuotesContextProvider(props) {
     //const [today, setToday] = useState([])
 
     function getConfidence() {
-        axios.get(`https://favqs.com/api/quotes/?filter=confidence`, {
+        axios.get(`https://cors-anywhere.herokuapp.com/https://favqs.com/api/quotes/?filter=confidence`, {
             headers: {
                 Authorization: `Token token="665f88f6e938a4a9e666f74bb272fe7a"`
                 
@@ -32,7 +32,7 @@ function QuotesContextProvider(props) {
     }
 
     function getInspiration() {
-        axios.get(`https://favqs.com/api/quotes/?filter=inspiration`, {
+        axios.get(`https://cors-anywhere.herokuapp.com/https://favqs.com/api/quotes/?filter=inspiration`, {
             headers: {
                 Authorization: `Token token="665f88f6e938a4a9e666f74bb272fe7a"`
             }
@@ -43,7 +43,7 @@ function QuotesContextProvider(props) {
     }
 
     function getKindness() {
-        axios.get(`https://favqs.com/api/quotes/?filter=kindness`, {
+        axios.get(`https://cors-anywhere.herokuapp.com/https://favqs.com/api/quotes/?filter=kindness`, {
             headers: {
                 Authorization: `Token token="665f88f6e938a4a9e666f74bb272fe7a"`
             }
@@ -54,7 +54,7 @@ function QuotesContextProvider(props) {
     }
 
     function getSuccess() {
-        axios.get(`https://favqs.com/api/quotes/?filter=success`, {
+        axios.get(`https://cors-anywhere.herokuapp.com/https://favqs.com/api/quotes/?filter=success`, {
             headers: {
                 Authorization: `Token token="665f88f6e938a4a9e666f74bb272fe7a"`
             }
